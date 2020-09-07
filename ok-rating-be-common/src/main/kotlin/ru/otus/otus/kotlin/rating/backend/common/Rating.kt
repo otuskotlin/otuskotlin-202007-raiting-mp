@@ -9,5 +9,5 @@ data class Rating(
     var rating: String,
     var createdBy: String,
     var createdAt: LocalDateTime,
-    var updatedAt: LocalDateTime
+    var updatedAt: LocalDateTime? = null
 )

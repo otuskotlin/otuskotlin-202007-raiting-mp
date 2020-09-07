@@ -6,10 +6,10 @@ import kotlin.jvm.*
 data class ValidationResult
 @JvmOverloads
 constructor(
-        val errors: List<HandleError> = emptyList()
+    val errors: List<HandleError> = emptyList()
 ) {
 
-    constructor(vararg argErrors: HandleError?): this(errors = argErrors.filterNotNull())
+    constructor(vararg argErrors: HandleError?) : this(errors = argErrors.filterNotNull())
 
     val isOk
         get() = errors.isEmpty()

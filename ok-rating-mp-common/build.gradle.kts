@@ -17,7 +17,7 @@ kotlin {
         browser()
         nodejs()
     }
-    jvm{
+    jvm {
         withJava()
     }
     linuxX64()

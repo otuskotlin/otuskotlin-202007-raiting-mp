@@ -9,7 +9,7 @@ public class ValidatorTest {
 
     @Test
     public void validatorTest() {
-        ValidationResult result = new SomeValidator( "rating").validate("5");
+        ValidationResult result = new SomeValidator("rating").validate("5");
         assertTrue(result.isOk());
         assertEquals(0, result.getErrors().size());
     }

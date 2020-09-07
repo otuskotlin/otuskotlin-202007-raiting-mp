@@ -2,19 +2,18 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="Native " allPlatforms="Native []" useProjectSettings="false" isTestModule="true" externalProjectId=":ok-rating-mp-common">
+      <configuration version="3" platform="Native (linux_x64) " allPlatforms="Native []/Native [linux_x64]" useProjectSettings="false" isTestModule="true" externalProjectId=":ok-rating-mp-common">
         <dependsOnModuleNames>:ok-rating-mp-common:commonTest</dependsOnModuleNames>
         <sourceSets>
-          <sourceSet>otuskotlin-202007.ok-rating-mp-common.commonMain</sourceSet>
           <sourceSet>otuskotlin-202007.ok-rating-mp-common.linuxX64Main</sourceSet>
+          <sourceSet>otuskotlin-202007.ok-rating-mp-common.commonMain</sourceSet>
           <sourceSet>otuskotlin-202007.ok-rating-mp-common.commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
-        <externalSystemTestTasks>linuxX64Test|:ok-rating-mp-common:linuxX64Test|linuxX64</externalSystemTestTasks>
         <compilerSettings />
         <compilerArguments>
-          <option name="languageVersion" value="1.3" />
-          <option name="apiVersion" value="1.3" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
           <option name="pluginOptions">
             <array />
           </option>

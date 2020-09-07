@@ -1,0 +1,44 @@
+###
+POST http://localhost:8080/items
+Content-Type: application/json
+
+{
+  "offset": 10,
+  "limit": 10,
+  "filter": {
+    "searchString": "test"
+  }
+}
+
+###
+POST http://localhost:8080/items
+Content-Type: application/json
+
+{
+  "offset": 10,
+  "limit": 10,
+  "filter": {
+    "searchString": "test"
+  }
+}
+
+###
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "id": "id",
+  "externalObjectId": "externalObjectId",
+  "externalTypeId": "externalTypeId",
+  "rating": "rating",
+  "createdBy": "createdBy",
+  "createdAt": "2020-09-03"
+}
+
+###
+DELETE http://localhost:8080/
+Content-Type: application/json
+
+{
+  "id": "1"
+}

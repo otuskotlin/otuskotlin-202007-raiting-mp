@@ -8,10 +8,9 @@ class ValidatorStringToInt(
     val field: String = ""
 ) : Validator<String?> {
     override fun validate(arg: String?): ValidationResult = ValidationResult(
-        if (arg?.toIntOrNull() != null){
+        if (arg?.toIntOrNull() != null) {
             null
-        }
-        else
+        } else
             HandleError(
                 message = "Поле ${field.takeIf { it.isNotBlank() } ?: ""} не число",
                 field = this.field

@@ -5,6 +5,6 @@ import kotlinx.serialization.Transient
 
 @Serializable
 open class KmpRatingResponse(
-        @Transient open val status: KmpRatingResultStatus? = null,
-        @Transient open val errors: List<KmpRatingError>? = null
+    @Transient open val status: KmpRatingResultStatus? = null,
+    @Transient open val errors: List<KmpRatingError>? = null
 )

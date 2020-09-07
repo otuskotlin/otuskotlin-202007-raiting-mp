@@ -4,8 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class KmpRatingResponseItem(
-        val data: KmpRating? = null,
-        override val status: KmpRatingResultStatus? = null
-): KmpRatingResponse(
-        status = status
+    val data: KmpRating? = null,
+    override val status: KmpRatingResultStatus? = null
+) : KmpRatingResponse(
+    status = status
 )

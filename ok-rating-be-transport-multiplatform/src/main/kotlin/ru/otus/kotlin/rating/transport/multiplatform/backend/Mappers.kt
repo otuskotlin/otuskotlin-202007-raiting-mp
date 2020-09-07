@@ -1,9 +1,22 @@
 package ru.otus.kotlin.rating.transport.multiplatform.backend
 
 import ru.otus.kotlin.rating.multiplatform.transport.models.KmpRating
+import ru.otus.kotlin.rating.multiplatform.transport.models.KmpRatingCreate
 import ru.otus.otus.kotlin.rating.backend.common.Rating
 import java.time.LocalDate
 import java.time.LocalDateTime
+
+fun KmpRatingCreate.toKmpRating(): KmpRating =
+    KmpRating(
+        id = this.id,
+        externalObjectId = this.externalObjectId,
+        externalTypeId = this.externalTypeId,
+        rating = this.rating,
+        createdBy = this.createdBy,
+        createdAt = this.createdAt?.kmpToString(),
+        updatedAt = this.createdAt?.kmpToString()
+    )
+
 
 fun Rating.toKmpRating(): KmpRating =
     KmpRating(
